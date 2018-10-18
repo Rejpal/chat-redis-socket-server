@@ -1,0 +1,28 @@
+{
+  "name": "chat-redis-socket-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/server.js",
+    "flow": "flow",
+    "flow:check": "flow check ./src/",
+    "flow-typed": "flow-typed install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.83.0",
+    "flow-typed": "^2.5.1"
+  },
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "socker.io": "0.0.0-alpha-beta",
+    "socket.io": "^2.1.1",
+    "socket.io-redis": "^5.2.0"
+  }
+}
