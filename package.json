@@ -9,11 +9,14 @@
     "flow:check": "flow check ./src/",
     "flow-typed": "flow-typed install",
     "lint": "standard",
+    "jest": "jest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "standard": {
     "parser": "babel-eslint",
-    "plugins": [ "flowtype" ]
+    "plugins": [
+      "flowtype"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -29,6 +32,7 @@
   },
   "dependencies": {
     "dotenv": "^6.1.0",
+    "jest": "^23.6.0",
     "socker.io": "0.0.0-alpha-beta",
     "socket.io": "^2.1.1",
     "socket.io-redis": "^5.2.0"

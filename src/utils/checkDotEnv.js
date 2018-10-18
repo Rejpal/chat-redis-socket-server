@@ -5,7 +5,7 @@ type DotEnv = {
   REDIS_PORT: number
 }
 
-export function checkDotEnv (envVariables: DotEnv) {
+export function checkDotEnv (envVariables: DotEnv): boolean {
   const { PORT, REDIS_HOST, REDIS_PORT } = envVariables
   if (!PORT) {
     throw new Error('PORT is not defined in .env')
@@ -16,4 +16,5 @@ export function checkDotEnv (envVariables: DotEnv) {
   } else {
     console.info('.env is defined correctly.', PORT, REDIS_HOST, REDIS_PORT)
   }
+  return true
 }
